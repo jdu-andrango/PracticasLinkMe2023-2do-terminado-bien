@@ -1,0 +1,284 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-image: linear-gradient(to right, #a4a4a4, #ffffff);
+    font-family: 'Alkatra', cursive;
+}
+
+/*tamano de la portada*/
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/laptop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content:hover {
+    transform: translate(-50%, -60%);
+    color: #009BFF;
+}
+
+.hero-content:hover .hero-title {
+    font-size: 6rem;
+}
+
+.hero-content:hover .hero-text {
+    font-size: 2rem;
+}
+
+/*estilos del navbar*/
+
+.navbar {
+padding: 2px 0;
+}
+
+.navbar-brand img { max-height: 150px;
+}
+
+.navbar-toggler {
+border: none;
+}
+
+.navbar-nav .nav-link {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #009BFF;
+}
+
+/* titulos*/
+
+.container {
+    max-width: 1200px; /* Ajusta el ancho máximo del contenedor según prefieras */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 2px; /* Ajusta el espacio interno del contenedor según prefieras */
+}
+
+.content-section p:hover {
+    color: #009BFF;
+}
+
+.content-section:hover p {
+    font-size: 1.3em;
+    transition: font-size 0.5s;
+}
+.content-section {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
+}
+
+/*button static */
+.fixed-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid #009BFF;
+  color: #009BFF;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #009BFF;
+  color: white;
+  transform: scale(2);
+}
+/*carrucel*/
+
+/*icono card*/
+
+.icono {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subtitulo {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.col-md-4:hover {
+    transform: scale(1.05);
+}
+
+.col-md-4:hover h5,
+.col-md-4:hover p {
+    color: #009BFF;
+}
+
+.icono {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subtitulo {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.col-md-4:hover {
+    transform: scale(1.05);
+}
+
+.col-md-4:hover h5,
+.col-md-4:hover p {
+    color: #009BFF;
+}
+
+.titulo-final {
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.titulo-final:hover {
+    transform: scale(1.2);
+    color: #009BFF;
+}
+
+/**/
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 0 30%;
+    margin: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .card {
+    flex: 1 0 100%;
+  }
+}
+
+.square img {
+  max-width: 100%;
+}
+.square:hover {
+  background-color: #009BFF;
+}
+
+.square:hover h3,
+.square:hover p {
+  color: white;
+   text-align: center;
+}
+
+.container-lg {
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-md-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 10px;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: #009BFF;
+  color: white;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 16px;
+  text-align: center;
+}
+
+.square img {
+  width: 100%;
+  height: auto;
+}
+
+ .card-img-top {
+  max-width: 100%;
+}
+
+table {
+        width: 100%;
+        border-collapse: collapse;
+}
+td {
+        padding: 10px;
+        text-align: center;
+}
+table img {
+        max-width: 100%;
+        height: 300px;
+}
+td:hover {
+        background-color:#009BFF;
+        color: white;
+}
+
+
